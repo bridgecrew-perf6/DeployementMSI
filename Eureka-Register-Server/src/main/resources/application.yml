@@ -1,0 +1,16 @@
+spring:
+  profiles: Eureka1
+  application: 
+   name: Eureka
+
+server:
+   port: 2222
+
+eureka:
+  instance:
+    hostname: Eur1 
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+          defultZone: http://Eur1:2222/eureka
